@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/movie_nav_graph"
+    app:startDestination="@id/searchMoviesFragment">
+
+    <fragment
+        android:id="@+id/searchMoviesFragment"
+        android:name="com.shashi.shiva.omdbsample.ui.fragments.SearchMoviesFragment"
+        android:label="SearchMoviesFragment" >
+        <action
+            android:id="@+id/action_searchMoviesFragment_to_movieFullViewFragment"
+            app:destination="@id/movieFullViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/savedMoviesFragment"
+        android:name="com.shashi.shiva.omdbsample.ui.fragments.SavedMoviesFragment"
+        android:label="SavedMoviesFragment" >
+        <action
+            android:id="@+id/action_savedMoviesFragment_to_movieFullViewFragment"
+            app:destination="@id/movieFullViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieFullViewFragment"
+        android:name="com.shashi.shiva.omdbsample.ui.fragments.MovieFullViewFragment"
+        android:label="fragment_movie_full_view"
+        tools:layout="@layout/fragment_movie_full_view" >
+        <argument
+            android:name="movie"
+            app:argType="com.shashi.shiva.omdbsample.models.MovieResponse"/>
+    </fragment>
+</navigation>

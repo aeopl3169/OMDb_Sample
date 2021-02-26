@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">OMDb Sample</string>
+    <string name="search_movies">Search Movies</string>
+    <string name="saved_movies">Saved Movies</string>
+    <string name="title">Title: </string>
+    <string name="release">Release: </string>
+    <string name="actors">Actors: </string>
+    <string name="search">Search... </string>
+</resources>

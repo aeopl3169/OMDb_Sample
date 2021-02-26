@@ -1,0 +1,8 @@
+# WELCOME
+1. Run the app
+2. You will find search EditText file to search any movie (minimum 3 characters you should type)
+3. After typing the movie name the movie picture appears.
+4. Select on the movie to open in detailed view.
+5. Click on like symbol(FloatingActionButton) to save the movie details in to DB. (save 5 to 6 movies)
+6. Click on bottom navigation bar to see saved movies.
+7. Swipe to delete the saved movies and also undo the deleted item by clicking on the UNDO button on the Snackbar(when appeared).
